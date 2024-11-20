@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="todos-invalid.json" />
+    <None Remove="todos-valid.json" />
+    <Content Include="todos-invalid.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="todos-valid.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
